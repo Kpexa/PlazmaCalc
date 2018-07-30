@@ -1,0 +1,71 @@
+<!-- HTML code is not mine!!! -->
+<!-- HTML код не мій!!! -->
+<!-- HTML код не мой!!! -->
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plasma Calc</title>
+</head>
+<body>
+  <h1>Розрахунок вартості плазмової різки металу</h1>    
+    <table border="1" cellspacing="0" cellpadding=4 id="table3" style="border-collapse: collapse">
+      <tr>					    
+        <td align="center">Тип металу</td>
+        <td align="center">          
+          <select id="type" name="material" style="width: 180px;">
+            <option value="1">Вуглецева сталь</option>
+            <option value="2">Кольоровий метал</option>
+          </select>         
+        </td>
+      </tr>
+      <tr>
+        <td align="center">Довжина різки, м:</td>
+        <td align="center">
+          <input type="text" name="length" placeholder="тільки ціле число" id="length" class="inp inpValid1" style="width: 180px;">          
+        </td>
+      </tr>
+      <tr>
+        <td align="center">К-сть пропалів, шт:</td>
+        <td align="center">       
+          <input type="text" name="vrez" placeholder="тільки ціле число" id="vrez" class="inp inpValid2" style="width: 180px;">          
+        </td>
+      </tr>
+      <tr>
+        <td align="center">Товщина металу до</td>
+        <td align="center">          
+          <select name="width" id="thickness" style="width: 150px;"> 
+            <option value="0">2</option>
+            <option value="1">3-4</option>
+            <option value="2">5-6</option>
+            <option value="3">7-8</option>
+            <option value="4">9-10</option>  
+            <option value="5">11-14</option>
+            <option value="6">15-20</option>
+            <option value="7">20-25</option>
+            <option value="8">25-30</option>
+          </select>
+          мм.          
+        </td>
+      </tr>
+      <tr>
+        <td align="center">Вартість різки, грн.</td>
+        <td align="center">          
+          <input type="text" name="oneprice" id="oneprice" class="inp" style="width: 180px;">          
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">          
+          <input type="button" id='nulf' name='nulf' value="Розрахувати" class="calc">
+          <input type="reset" value="Скинути" id="reset">          
+        </td>
+      </tr>
+    </table>         
+    <p>створення креслення по фото: від 150 грн/год (залежить від складності деталей)</p>
+    <p>&nbsp;</p>
+    <p align="left">beta v0.1241</p>
+  <script src="scripts.js"></script>
+</body>
+</html>
