@@ -75,10 +75,10 @@ window.addEventListener('load', function(){
   };  
 
   function validation() {
-    // функція валідації поля вводу довжини (не допускає ввід символів окрім "." та букв)
+    // функція валідації поля вводу довжини (не допускає ввід дробових чисел, символів та букв)
     var pattern = /^(-)?[0-9]+$/; 
     if(!pattern.test(this.value)) {      
-      var new_value = this.value.replace(/[^0-9.]/g, '');      
+      var new_value = this.value.replace(/[^0-9]/g, '');      
       this.value = new_value;
     }
 
